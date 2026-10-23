@@ -103,10 +103,10 @@ export default function StudentForm({ onSubmit, editingStudent, onCancel }) {
   style={{ color: form.department === '' ? '#64748b' : '#f8fafc' }}
 >
   <option value="" disabled hidden>Select Department *</option>
-  <option value="Computer Science" style={{ color: '#1e293b' }}>Computer Science</option>
-  <option value="Electrical" style={{ color: '#1e293b' }}>Electrical</option>
-  <option value="Civil" style={{ color: '#1e293b' }}>Civil</option>
-  <option value="Mechanical" style={{ color: '#1e293b' }}>Mechanical</option>
+  <option value="Computer Science" style={{ color: '#fdfdfd' }}>Computer Science</option>
+  <option value="Electrical" style={{ color: '#fcfcfd' }}>Electrical</option>
+  <option value="Civil" style={{ color: '#ffffff' }}>Civil</option>
+  <option value="Mechanical" style={{ color: '#ffffff' }}>Mechanical</option>
 </select>
   {errors.department && <span className="error">{errors.department}</span>}
 </div>
