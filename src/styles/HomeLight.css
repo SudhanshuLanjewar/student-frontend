@@ -1,0 +1,102 @@
+/* White theme for the home page only.
+   Scoped with :has(.home-container) so the student data page stays dark. */
+
+body:has(.home-container) {
+  background-color: #ffffff;
+  background-image: none;
+}
+
+.app:has(.home-container) {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+/* Header */
+.app:has(.home-container) .app-header {
+  background: rgba(255, 255, 255, 0.85);
+  border-bottom-color: #e2e8f0;
+}
+
+.app:has(.home-container) .app-header h1 {
+  background: linear-gradient(to right, #7c3aed, #0284c7);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.app:has(.home-container) .brand-by {
+  color: #64748b;
+}
+
+.app:has(.home-container) .brand-by strong {
+  color: #6d28d9;
+}
+
+/* Hero */
+.app:has(.home-container) .hero-orb {
+  opacity: 0.18;
+}
+
+.app:has(.home-container) .hero-badge {
+  color: #6d28d9;
+  background: rgba(139, 92, 246, 0.1);
+  border-color: rgba(139, 92, 246, 0.25);
+}
+
+.app:has(.home-container) .hero-section h1 {
+  color: #0f172a;
+}
+
+.app:has(.home-container) .gradient-text {
+  background-image: linear-gradient(90deg, #7c3aed, #0284c7, #7c3aed);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.app:has(.home-container) .hero-section p {
+  color: #475569;
+}
+
+.app:has(.home-container) .tech-chip {
+  color: #334155;
+  background: #f1f5f9;
+  border-color: #e2e8f0;
+}
+
+/* Feature cards */
+.app:has(.home-container) .section-title {
+  color: #0f172a;
+}
+
+.app:has(.home-container) .feature-card {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  box-shadow: 0 4px 20px -8px rgba(15, 23, 42, 0.12);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+.app:has(.home-container) .feature-card:hover {
+  border-color: rgba(124, 58, 237, 0.5);
+  box-shadow: 0 12px 30px -10px rgba(124, 58, 237, 0.25);
+}
+
+.app:has(.home-container) .feature-card h3 {
+  color: #0f172a;
+}
+
+.app:has(.home-container) .feature-card p {
+  color: #64748b;
+}
+
+.app:has(.home-container) .feature-icon {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.14), rgba(56, 189, 248, 0.14));
+  border-color: rgba(139, 92, 246, 0.25);
+}
+
+/* Footer */
+.app:has(.home-container) .app-footer {
+  background: #f8fafc;
+  color: #64748b;
+  border-top-color: #e2e8f0;
+}
