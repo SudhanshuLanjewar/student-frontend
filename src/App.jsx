@@ -5,6 +5,7 @@ import StudentList from './components/StudentList';
 import SearchBar from './components/SearchBar';
 import Home from './components/Home';
 import './styles/App.css';
+import './styles/Home.css';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home'); // 'home' ya 'student-data'
@@ -83,9 +84,18 @@ function App() {
     <div className="app">
       <header className="app-header">
         <div className="header-content">
-          <h1 onClick={() => setCurrentPage('home')} style={{ cursor: 'pointer' }}>
-            🎓 Student Management
-          </h1>
+          <div
+            className="brand"
+            role="button"
+            tabIndex={0}
+            onClick={() => setCurrentPage('home')}
+            onKeyDown={(e) => e.key === 'Enter' && setCurrentPage('home')}
+          >
+            <h1>🎓 Student Management</h1>
+            <span className="brand-by">
+              by <strong>Sudhanshu Lanjewar</strong>
+            </span>
+          </div>
           {currentPage === 'student-data' && (
             <button className="btn-back" onClick={() => setCurrentPage('home')}>
               ← Back to Home
@@ -125,6 +135,7 @@ function App() {
         <span>🌐 Frontend: Netlify</span>
         <span>⚙️ Backend: Render</span>
         <span>🗄️ Database: MongoDB Atlas</span>
+        <span>👨‍💻 Built by Sudhanshu Lanjewar</span>
       </footer>
     </div>
   );
