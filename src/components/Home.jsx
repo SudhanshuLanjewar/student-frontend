@@ -1,4 +1,4 @@
-import '../styles/HomeLight.css';
+import '../styles/HomeDark.css';
 
 const features = [
   {

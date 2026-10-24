@@ -1,0 +1,42 @@
+/* Dark theme for the home page only.
+   The dashboard (student data page) stays white via Light.css. */
+
+:root:has(.home-container) {
+  --bg-main: #0f172a;
+  --bg-card: rgba(30, 41, 59, 0.7);
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --border-color: rgba(255, 255, 255, 0.1);
+}
+
+body:has(.home-container) {
+  background-color: #0f172a;
+  background-image:
+    radial-gradient(circle at 15% 50%, rgba(139, 92, 246, 0.15), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(56, 189, 248, 0.15), transparent 25%);
+  background-attachment: fixed;
+  color: #f8fafc;
+}
+
+.app:has(.home-container) .app-header {
+  background: rgba(15, 23, 42, 0.8);
+}
+
+.app:has(.home-container) .app-header h1 {
+  background: linear-gradient(to right, #a78bfa, #38bdf8);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.app:has(.home-container) .brand-by {
+  color: #94a3b8;
+}
+
+.app:has(.home-container) .brand-by strong {
+  color: #c4b5fd;
+}
+
+.app:has(.home-container) .app-footer {
+  background: #020617;
+  color: #64748b;
+}
