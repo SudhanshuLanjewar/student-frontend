@@ -95,21 +95,21 @@ export default function StudentForm({ onSubmit, editingStudent, onCancel }) {
         </div>
 
         <div className="form-group">
-  <select 
-  name="department" 
-  value={form.department} 
-  onChange={handleChange} 
-  required
-  style={{ color: form.department === '' ? '#64748b' : '#f8fafc' }}
->
-  <option value="" disabled hidden>Select Department *</option>
-  <option value="Computer Science" style={{ color: '#fdfdfd' }}>Computer Science</option>
-  <option value="Electrical" style={{ color: '#fcfcfd' }}>Electrical</option>
-  <option value="Civil" style={{ color: '#ffffff' }}>Civil</option>
-  <option value="Mechanical" style={{ color: '#ffffff' }}>Mechanical</option>
-</select>
-  {errors.department && <span className="error">{errors.department}</span>}
-</div>
+          <select
+            name="department"
+            value={form.department}
+            onChange={handleChange}
+            required
+            style={{ color: form.department === '' ? '#94a3b8' : '#0f172a' }}
+          >
+            <option value="" disabled hidden>Select Department *</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Electrical">Electrical</option>
+            <option value="Civil">Civil</option>
+            <option value="Mechanical">Mechanical</option>
+          </select>
+          {errors.department && <span className="error">{errors.department}</span>}
+        </div>
 
         <div className="form-group">
           <input name="semester" type="number" placeholder="Semester (1-8) *" min="1" max="8" value={form.semester} onChange={handleChange} />

@@ -1,0 +1,120 @@
+/* Global white theme (home + dashboard).
+   Imported after App.css so these overrides win. */
+
+:root {
+  --bg-main: #ffffff;
+  --bg-card: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+}
+
+body {
+  background-color: #ffffff;
+  background-image: none;
+  color: var(--text-main);
+}
+
+/* Header */
+.app-header {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.app-header h1 {
+  background: linear-gradient(to right, #7c3aed, #0284c7);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.brand-by { color: #64748b; }
+.brand-by strong { color: #6d28d9; }
+
+.btn-back {
+  background: #f1f5f9;
+  color: var(--text-main);
+}
+.btn-back:hover { background: #e2e8f0; }
+
+/* Messages */
+.message.success {
+  background: rgba(16, 185, 129, 0.12);
+  color: #047857;
+  border-color: rgba(16, 185, 129, 0.3);
+}
+.message.error {
+  background: rgba(239, 68, 68, 0.1);
+  color: #b91c1c;
+  border-color: rgba(239, 68, 68, 0.3);
+}
+
+/* Dashboard panels */
+.left-panel,
+.right-panel {
+  background: #ffffff;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  box-shadow: 0 10px 30px -12px rgba(15, 23, 42, 0.14);
+}
+
+.form-section h2 { color: #0f172a; }
+
+/* Form fields */
+.form-group input,
+.form-group select {
+  background: #f8fafc;
+  color: var(--text-main);
+  border-color: #cbd5e1;
+}
+
+.form-group input::placeholder,
+.search-bar input::placeholder { color: #94a3b8; }
+
+.form-group input:focus,
+.form-group select:focus {
+  background: #ffffff;
+}
+
+.form-group input:disabled {
+  background: #f1f5f9;
+  color: #64748b;
+  cursor: not-allowed;
+}
+
+.form-group select option {
+  color: #0f172a;
+  background: #ffffff;
+}
+
+.form-group .error { color: #dc2626; }
+
+.btn-secondary {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+.btn-secondary:hover { background: #e2e8f0; }
+
+/* Search bar */
+.search-bar input {
+  background: #f8fafc;
+  color: #0f172a;
+  border-color: #cbd5e1;
+}
+
+.search-bar .count {
+  color: #334155;
+  background: #f1f5f9;
+}
+
+/* Table */
+.student-table th {
+  background: #f1f5f9;
+  color: #475569;
+}
+.student-table td { color: #1e293b; }
+.student-table tbody tr:hover { background: #f8fafc; }
+
+/* Footer */
+.app-footer {
+  background: #f8fafc;
+  color: #64748b;
+}

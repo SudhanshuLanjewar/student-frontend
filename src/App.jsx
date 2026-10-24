@@ -6,6 +6,7 @@ import SearchBar from './components/SearchBar';
 import Home from './components/Home';
 import './styles/App.css';
 import './styles/Home.css';
+import './styles/Light.css';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home'); // 'home' ya 'student-data'
