@@ -26,15 +26,10 @@ const stack = ['React', 'Vite', 'Render API', 'MongoDB Atlas', 'Netlify'];
 export default function Home({ onNavigate }) {
   return (
     <div className="home-container">
-      <div className="hero-orb hero-orb-1" aria-hidden="true" />
-      <div className="hero-orb hero-orb-2" aria-hidden="true" />
-
       <section className="hero-section">
         <span className="hero-badge">✨ Modern cloud-based student records</span>
 
-        <h1>
-          Welcome to the <span className="gradient-text">Student Management</span> System
-        </h1>
+        <h1>Welcome to the Student Management System</h1>
 
         <p>
           A modern, cloud-based solution to manage all your student records
@@ -55,8 +50,8 @@ export default function Home({ onNavigate }) {
       <h2 className="section-title">Everything you need</h2>
 
       <div className="features-grid">
-        {features.map((f, i) => (
-          <div className="feature-card" key={f.title} style={{ '--i': i }}>
+        {features.map((f) => (
+          <div className="feature-card" key={f.title}>
             <div className="feature-icon">{f.icon}</div>
             <h3>{f.title}</h3>
             <p>{f.text}</p>
