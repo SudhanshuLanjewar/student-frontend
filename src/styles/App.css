@@ -3,7 +3,7 @@
 :root {
   --primary: #8b5cf6; /* Vibrant Purple */
   --primary-hover: #7c3aed;
-  --bg-main: #000814; /* Near-black navy */
+  --bg-main: #0a0000; /* Near-black with a red tint */
   --bg-card: rgba(30, 41, 59, 0.7); /* Semi-transparent card */
   --text-main: #f8fafc; /* Off-white */
   --text-muted: #94a3b8; /* Light grey */
@@ -19,11 +19,11 @@
 
 body {
   background-color: var(--bg-main);
-  /* Black + deep blue mix with soft blue glows */
+  /* Black + deep red mix with soft red glows */
   background-image: 
-    radial-gradient(circle at 15% 50%, rgba(37, 99, 235, 0.22), transparent 35%),
-    radial-gradient(circle at 85% 30%, rgba(30, 64, 175, 0.28), transparent 35%),
-    linear-gradient(160deg, #000000 0%, #020617 35%, #0a1f5c 70%, #000000 100%);
+    radial-gradient(circle at 15% 50%, rgba(220, 38, 38, 0.22), transparent 35%),
+    radial-gradient(circle at 85% 30%, rgba(153, 27, 27, 0.28), transparent 35%),
+    linear-gradient(160deg, #000000 0%, #120202 35%, #5c0a0a 70%, #000000 100%);
   background-attachment: fixed;
   color: var(--text-main);
   line-height: 1.6;
