@@ -1,5 +1,3 @@
-import '../styles/HomeLight.css';
-
 const features = [
   {
     icon: '🗂️',

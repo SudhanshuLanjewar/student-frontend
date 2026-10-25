@@ -194,3 +194,10 @@
     animation: none;
   }
 }
+
+/* ===== White text for readability on the dark background ===== */
+.hero-section p { color: #e2e8f0; }
+.tech-chip { color: #ffffff; }
+.section-title { color: #ffffff; }
+.feature-card h3 { color: #ffffff; }
+.feature-card p { color: #e2e8f0; }
