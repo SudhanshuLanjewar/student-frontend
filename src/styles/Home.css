@@ -1,13 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap');
 
-/* ===== Theme: black, oxblood red and antique gold ===== */
+/* ===== Theme: black, deep blue-purple and antique gold ===== */
 :root {
   --primary: #c1121f;
   --primary-hover: #e11d48;
-  --bg-card: rgba(18, 4, 6, 0.72);
+  --bg-card: rgba(10, 8, 28, 0.72);
   --gold: #c9a227;
   --gold-line: rgba(201, 162, 39, 0.4);
   --serif: 'Cormorant Garamond', Georgia, serif;
+}
+
+/* Shared background for Home and Student Data (overrides App.css) */
+body {
+  background-color: #03030f;
+  background-image:
+    radial-gradient(circle at 15% 50%, rgba(37, 99, 235, 0.22), transparent 35%),
+    radial-gradient(circle at 85% 30%, rgba(124, 58, 237, 0.28), transparent 35%),
+    linear-gradient(160deg, #000000 0%, #050a2e 35%, #2e1065 70%, #000000 100%);
+  background-attachment: fixed;
 }
 
 ::selection { background: var(--primary); color: #fff; }
@@ -95,8 +105,8 @@ button:focus-visible,
   animation: floatOrb 14s ease-in-out infinite;
 }
 
-.hero-orb-1 { width: 340px; height: 340px; top: -20px; left: -60px; background: #dc2626; }
-.hero-orb-2 { width: 300px; height: 300px; top: 120px; right: -40px; background: #7f1d1d; animation-delay: -6s; }
+.hero-orb-1 { width: 340px; height: 340px; top: -20px; left: -60px; background: #2563eb; }
+.hero-orb-2 { width: 300px; height: 300px; top: 120px; right: -40px; background: #7c3aed; animation-delay: -6s; }
 
 @keyframes floatOrb {
   0%, 100% { transform: translate(0, 0); }
