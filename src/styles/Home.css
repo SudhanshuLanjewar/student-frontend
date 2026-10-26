@@ -1,4 +1,21 @@
 /* Home-page and header-brand details (base styles live in App.css) */
+
+/* Shared background for both pages: deep indigo night (overrides App.css) */
+body {
+  background: linear-gradient(160deg, #1b1145 0%, #0d0a26 55%, #050410 100%);
+  background-attachment: fixed;
+}
+
+body::before {
+  background: radial-gradient(circle, rgba(34, 211, 238, 0.3), transparent 70%);
+}
+
+body::after {
+  background: radial-gradient(circle, rgba(217, 70, 239, 0.32), transparent 70%);
+}
+
+.app-header { background: rgba(13, 10, 38, 0.6); }
+
 .brand {
   display: flex;
   flex-direction: column;
