@@ -12,7 +12,7 @@ const features = [
   {
     icon: '☁️',
     title: 'Cloud Hosted',
-    text: 'Powered by Netlify, Render, and MongoDB Atlas for maximum reliability.',
+    text: 'Powered by Vercel, Render, and MongoDB Atlas for maximum reliability.',
   },
   {
     icon: '🔒',
@@ -21,7 +21,7 @@ const features = [
   },
 ];
 
-const stack = ['React', 'Vite', 'Render API', 'MongoDB Atlas', 'Netlify'];
+const stack = ['React', 'Vite', 'Render API', 'MongoDB Atlas', 'Vercel'];
 
 export default function Home({ onNavigate }) {
   return (
